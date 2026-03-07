@@ -82,7 +82,7 @@ h2.sec-title span{color:var(--green);}
 .info-row{display:flex;justify-content:space-between;align-items:center;padding:.75rem 1.2rem;border-bottom:1px solid var(--border);font-size:.88rem;}
 .info-row:last-child{border-bottom:none;}
 .info-k{color:var(--muted);font-family:'Share Tech Mono',monospace;font-size:.75rem;letter-spacing:.05em;}
-.info-v{color:var(--text);font-weight:600;}
+.info-v {color: var(--text);font-weight: 600;text-align: right;max-width: 60%;}
 .info-v.g{color:var(--green);}
 .info-v.c{color:var(--cyan);}
 #skills{background:var(--surface);border-top:1px solid var(--border2);border-bottom:1px solid var(--border2);}
