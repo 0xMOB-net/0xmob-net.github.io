@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mamadou Oury Baldé – Cybersécurité & Réseaux</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<nav>
+  <div class="nav-logo">MOB<div class="nav-blink"></div></div>
+  <ul class="nav-links">
+    <li><a href="#about">Profil</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#ctf">CTF & Réseaux</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#formation">Formation</a></li>
+    <li><a href="#experience">Expérience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-badge"><div class="led"></div>Stage · Alternance · Master 2026</div>
+  <div class="hamburger" id="hamb" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">Profil</a>
+  <a href="#skills" onclick="closeMenu()">Compétences</a>
+  <a href="#ctf" onclick="closeMenu()">CTF & Réseaux</a>
+  <a href="#projects" onclick="closeMenu()">Projets</a>
+  <a href="#formation" onclick="closeMenu()">Formation</a>
+  <a href="#experience" onclick="closeMenu()">Expérience</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-tag">Étudiant L3 · Limoges · Stage · Alternance · Master</div>
+      <h1>MAMADOU<br>OURY <span class="accent">BALDÉ</span></h1>
+      <div class="hero-role">// Cybersécurité & Réseaux · 🥇 #1 CTF d'initiation CRYPTIS</div>
+      <p class="hero-desc">
+        Étudiant en <strong>Licence 3 Informatique</strong> à l'Université de Limoges,
+        passionné par la <strong>cybersécurité et les réseaux</strong>.
+        Classé <strong>🥇 #1 au CTF d'initiation CRYPTIS</strong> avec 5535 pts.
+        Je recherche un <strong>stage</strong>, une <strong>alternance</strong>
+        ou un <strong>Master en informatique avec une orientation cybersécurité, réseaux et systèmes</strong> — mobile toute la France.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-p">Me contacter</a>
+        <a href="#projects" class="btn btn-o">Voir mes projets</a>
+        <a href="https://github.com/0xMOB-net" target="_blank" class="btn btn-g">GitHub ↗</a>
+        <a href="assets/docs/cv.pdf" download="CV_Mamadou_Oury_Balde.pdf" class="btn btn-g">↓ CV</a>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-item"><div class="meta-val" data-count="4">0</div><div class="meta-label">Projets</div></div>
+        <div class="meta-item"><div class="meta-val" data-count="5535">0</div><div class="meta-label">Points CTF</div></div>
+        <div class="meta-item"><div class="meta-val">🥇 #1</div><div class="meta-label">Classement CTF</div></div>
+      </div>
+    </div>
+    <div class="avatar-col">
+      <div class="avatar-wrap">
+        <div class="avatar-ring-outer"></div>
+        <div class="avatar-ring-inner"></div>
+        <div class="avatar-circle">
+          <img class="avatar-photo" src="assets/images/moi.jpeg" alt="Mamadou Oury Baldé"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+            onload="this.nextElementSibling.style.display='none';">
+          <div class="avatar-initials" style="display:flex;flex-direction:column;align-items:center;gap:4px;"><span>MOB</span></div>
+        </div>
+      </div>
+      <div class="avatar-status"><div class="led"></div>Disponible · Stage · Alternance · Master</div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="hi">Cybersécurité</span><span>·</span><span>Réseaux</span><span>·</span>
+    <span class="hi">Python</span><span>·</span><span>Java</span><span>·</span>
+    <span class="hi">Linux</span><span>·</span><span>Bash</span><span>·</span>
+    <span class="hi">Wireshark</span><span>·</span><span>CTF</span><span>·</span>
+    <span class="hi">SQL</span><span>·</span><span>PHP</span><span>·</span>
+    <span class="hi">JavaScript</span><span>·</span><span>Git</span><span>·</span>
+    <span class="hi">JavaFX</span><span>·</span><span>MySQL</span><span>·</span>
+    <span class="hi">Cybersécurité</span><span>·</span><span>Réseaux</span><span>·</span>
+    <span class="hi">Python</span><span>·</span><span>Java</span><span>·</span>
+    <span class="hi">Linux</span><span>·</span><span>Bash</span><span>·</span>
+    <span class="hi">Wireshark</span><span>·</span><span>CTF</span><span>·</span>
+    <span class="hi">SQL</span><span>·</span><span>PHP</span><span>·</span>
+    <span class="hi">JavaScript</span><span>·</span><span>Git</span><span>·</span>
+    <span class="hi">JavaFX</span><span>·</span><span>MySQL</span><span>·</span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="section-wrap">
+    <div class="reveal"><div class="sec-label">01 — profil</div></div>
+    <h2 class="sec-title reveal">À propos de <span>moi</span></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Je suis en <strong>Licence 3 Informatique</strong> à l'Université de Limoges. Depuis le début, ce sont la <span class="hl">cybersécurité</span> et les <span class="hl">réseaux</span> qui m'attirent : comprendre comment les systèmes communiquent, identifier leurs vulnérabilités et apprendre à les sécuriser. C'est dans ces domaines que je souhaite construire ma carrière, et c'est pourquoi je vise un <span class="hl">Master en informatique avec une orientation cybersécurité, réseaux et systèmes</span> après ma licence.</p>
+        <p>En TP, je travaille régulièrement avec <span class="hl">Wireshark</span> pour la capture et l'analyse de paquets, l'étude des protocoles TCP/IP, DNS et HTTP, ainsi que la détection d'anomalies. Je participe aussi au <span class="hl">CTF d'initiation CRYPTIS</span> de ma faculté, où j'ai terminé <span class="hl">🥇 premier</span> avec 5535 points sur des épreuves de cryptographie, reverse engineering, réseau et web.</p>
+        <p>En parallèle de mes études, je travaille chez <strong>O'Tacos à Limoges</strong> depuis 2024, une expérience qui m'a permis de développer mon sens de l'organisation, ma rigueur et ma capacité à travailler efficacement sous pression. Je suis également <strong>Trésorier de l'AEGL</strong>. Je recherche actuellement un <strong>stage du 31 mars au 23 mai 2026</strong>, une <strong>alternance à partir de septembre 2026</strong>, ou un <strong>Master</strong>, et je suis mobile partout en France.</p>
+      </div>
+      <div class="reveal">
+        <div class="info-table">
+          <div class="info-row"><span class="info-k">formation</span><span class="info-v">L3 Informatique</span></div>
+          <div class="info-row"><span class="info-k">université</span><span class="info-v">Univ. de Limoges</span></div>
+          <div class="info-row"><span class="info-k">objectif</span><span class="info-v g">Master en informatique avec une orientation cybersécurité, réseaux et systèmes</span></div>
+          <div class="info-row"><span class="info-k">localisation</span><span class="info-v">Limoges · Mobile France</span></div>
+          <div class="info-row"><span class="info-k">permis</span><span class="info-v g">B ✓ — Véhiculé</span></div>
+          <div class="info-row"><span class="info-k">langues</span><span class="info-v">Français (natif) · Anglais B1</span></div>
+          <div class="info-row"><span class="info-k">ctf rank</span><span class="info-v g">🥇 #1 — 5535 pts · CRYPTIS</span></div>
+          <div class="info-row"><span class="info-k">stage</span><span class="info-v g">31 mars → 23 mai 2026</span></div>
+          <div class="info-row"><span class="info-k">alternance</span><span class="info-v g">Disponible · Sept. 2026</span></div>
+          <div class="info-row"><span class="info-k">github</span><span class="info-v c">0xMOB-net</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-wrap">
+    <div class="reveal"><div class="sec-label">02 — compétences</div></div>
+    <h2 class="sec-title reveal">Stack <span>Technique</span></h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-cat">🔐 Cybersécurité & Réseaux</div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Analyse réseau (Wireshark)</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" data-w="70"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Sécurité des systèmes</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill" data-w="65"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Administration réseau</span><span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill" data-w="60"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Linux / Bash</span><span class="skill-pct">68%</span></div><div class="skill-bar"><div class="skill-fill" data-w="68"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">CTF & Cryptographie</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" data-w="70"></div></div></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-cat">💻 Langages</div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" data-w="70"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Java</span><span class="skill-pct">68%</span></div><div class="skill-bar"><div class="skill-fill" data-w="68"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">JavaScript / PHP</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill" data-w="65"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">SQL</span><span class="skill-pct">68%</span></div><div class="skill-bar"><div class="skill-fill" data-w="68"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">C / Bash</span><span class="skill-pct">50%</span></div><div class="skill-bar"><div class="skill-fill" data-w="50"></div></div></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-cat">🌐 Web & Frameworks</div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">HTML5 / CSS3</span><span class="skill-pct">78%</span></div><div class="skill-bar"><div class="skill-fill" data-w="78"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">PHP / MySQL</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill" data-w="65"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Bootstrap</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill" data-w="65"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">JavaFX / Tkinter</span><span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill" data-w="60"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Git / GitHub</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill" data-w="65"></div></div></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-cat">🛠 Outils & Soft Skills</div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Rigueur & Organisation</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Travail en équipe</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Autonomie</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Gestion de projet</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" data-w="70"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Architecture MVC</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill" data-w="65"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ctf">
+  <div class="section-wrap">
+    <div class="reveal"><div class="sec-label">03 — ctf & réseaux</div></div>
+    <h2 class="sec-title reveal">Activité CTF & <span>Réseaux</span></h2>
+    <div class="ctf-wrapper">
+      <div>
+        <div class="ctf-stats reveal">
+          <div class="ctf-stat"><div class="ctf-stat-val" data-count="5535">0</div><div class="ctf-stat-label">Points</div></div>
+          <div class="ctf-stat"><div class="ctf-stat-val">🥇 #1</div><div class="ctf-stat-label">Classement Final</div></div>
+        </div>
+        <div class="ctf-chart-wrap reveal">
+          <div class="ctf-chart-title">Évolution du score · CTF d'initiation CRYPTIS — Univ. de Limoges</div>
+          <div class="ctf-chart">
+            <svg class="chart-svg" viewBox="0 0 520 160" preserveAspectRatio="none" id="ctfSvg">
+              <defs>
+                <linearGradient id="grd" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#00e676" stop-opacity=".25"/>
+                  <stop offset="100%" stop-color="#00e676" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <line x1="0" y1="40" x2="520" y2="40" stroke="#0e1f18" stroke-width="1"/>
+              <line x1="0" y1="80" x2="520" y2="80" stroke="#0e1f18" stroke-width="1"/>
+              <line x1="0" y1="120" x2="520" y2="120" stroke="#0e1f18" stroke-width="1"/>
+              <text x="3" y="43" fill="#3d5a47" font-size="9" font-family="Share Tech Mono">4500</text>
+              <text x="3" y="83" fill="#3d5a47" font-size="9" font-family="Share Tech Mono">3000</text>
+              <text x="3" y="123" fill="#3d5a47" font-size="9" font-family="Share Tech Mono">1500</text>
+              <path id="chartArea" fill="url(#grd)" opacity="0"/>
+              <path id="chartLine" fill="none" stroke="#00e676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
+              <g id="chartDots" opacity="0"></g>
+            </svg>
+          </div>
+          <div class="ctf-chart-legend">
+            <span>Oct. 2025</span>
+            <span style="color:var(--green)">balde25 · 🥇 #1</span>
+            <span>Mars 2026</span>
+          </div>
+        </div>
+        <div class="ctf-cats reveal" style="margin-top:1.2rem;">
+          <div class="ctf-cats-title">Répartition par catégorie</div>
+          <div class="ctf-cat-item"><div class="ctf-cat-top"><span class="ctf-cat-name">🔐 Cryptographie</span><span class="ctf-cat-pct">20.83%</span></div><div class="ctf-cat-bar"><div class="ctf-cat-fill" data-w="21" style="background:#00b4d8"></div></div></div>
+          <div class="ctf-cat-item"><div class="ctf-cat-top"><span class="ctf-cat-name">🌍 Réseau</span><span class="ctf-cat-pct">16.67%</span></div><div class="ctf-cat-bar"><div class="ctf-cat-fill" data-w="17" style="background:#00e5ff"></div></div></div>
+          <div class="ctf-cat-item"><div class="ctf-cat-top"><span class="ctf-cat-name">🔬 Reverse Engineering</span><span class="ctf-cat-pct">16.67%</span></div><div class="ctf-cat-bar"><div class="ctf-cat-fill" data-w="17" style="background:#ff6b6b"></div></div></div>
+          <div class="ctf-cat-item"><div class="ctf-cat-top"><span class="ctf-cat-name">🌐 Web</span><span class="ctf-cat-pct">16.67%</span></div><div class="ctf-cat-bar"><div class="ctf-cat-fill" data-w="17" style="background:#69f0ae"></div></div></div>
+          <div class="ctf-cat-item"><div class="ctf-cat-top"><span class="ctf-cat-name">🕵️ Stéganographie</span><span class="ctf-cat-pct">14.58%</span></div><div class="ctf-cat-bar"><div class="ctf-cat-fill" data-w="15" style="background:#00c853"></div></div></div>
+          <div class="ctf-cat-item"><div class="ctf-cat-top"><span class="ctf-cat-name">⚙️ Programmation</span><span class="ctf-cat-pct">12.50%</span></div><div class="ctf-cat-bar"><div class="ctf-cat-fill" data-w="13" style="background:#00e676"></div></div></div>
+          <div class="ctf-cat-item"><div class="ctf-cat-top"><span class="ctf-cat-name">📖 Introduction</span><span class="ctf-cat-pct">2.08%</span></div><div class="ctf-cat-bar"><div class="ctf-cat-fill" data-w="2" style="background:#ff9800"></div></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="ctf-tp reveal">
+          <div class="ctf-tp-title">🌐 Travaux Pratiques · Réseaux</div>
+          <div class="ctf-tp-item"><div class="ctf-tp-icon">🦈</div><div class="ctf-tp-text"><strong>Capture et analyse de trames — Wireshark</strong><br>Capture de paquets en temps réel, lecture des protocoles TCP/IP, UDP, DNS, HTTP. Je suis capable de reconstituer une session et d'identifier les échanges entre client et serveur.</div></div>
+          <div class="ctf-tp-item"><div class="ctf-tp-icon">🔍</div><div class="ctf-tp-text"><strong>Décodage de protocoles réseau</strong><br>Lecture de trames Ethernet, ARP, ICMP. Je sais suivre un flux et comprendre ce qui se passe à chaque couche du modèle OSI.</div></div>
+          <div class="ctf-tp-item"><div class="ctf-tp-icon">🔒</div><div class="ctf-tp-text"><strong>Détection de comportements suspects</strong><br>J'ai appris à repérer des anomalies dans des captures — ports inhabituels, requêtes anormales, patterns d'attaque basiques.</div></div>
+          <div class="ctf-tp-item"><div class="ctf-tp-icon">🏗️</div><div class="ctf-tp-text"><strong>Adressage IP et architecture réseau</strong><br>Sous-réseaux, DHCP, routage, configuration d'interfaces sous Linux — mis en pratique en TP tout au long de la licence.</div></div>
+        </div>
+        <div class="reveal" style="margin-top:1.2rem;background:var(--card);border:1px solid var(--border2);border-radius:8px;padding:1.3rem 1.4rem;">
+          <div style="font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green);margin-bottom:.8rem;font-family:'Share Tech Mono'">🏆 Plateforme CTF</div>
+          <div style="font-size:.95rem;color:var(--text);font-weight:600;margin-bottom:.3rem;">CTF d'initiation · CRYPTIS</div>
+          <div style="font-size:.82rem;color:var(--text2);margin-bottom:.8rem;">Université de Limoges · Plateforme interne</div>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <div style="background:rgba(0,230,118,.08);border:1px solid rgba(0,230,118,.2);border-radius:5px;padding:.5rem .9rem;font-size:.78rem;color:var(--green);font-family:'Share Tech Mono'">Score : 5535 pts</div>
+            <div style="background:rgba(0,230,118,.08);border:1px solid rgba(0,230,118,.2);border-radius:5px;padding:.5rem .9rem;font-size:.78rem;color:var(--green);font-family:'Share Tech Mono'">Rang : 🥇 #1</div>
+            <div style="background:rgba(0,180,216,.08);border:1px solid rgba(0,180,216,.2);border-radius:5px;padding:.5rem .9rem;font-size:.78rem;color:var(--cyan);font-family:'Share Tech Mono'">Pseudo : balde25</div>
+          </div>
+          <a href="http://teamcryptis.fr/users/57" target="_blank" style="display:inline-flex;align-items:center;gap:.5rem;margin-top:1rem;padding:.55rem 1.1rem;border-radius:5px;background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.25);font-family:'Share Tech Mono';font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--green);transition:all .22s;" onmouseover="this.style.background='rgba(0,230,118,.14)'" onmouseout="this.style.background='rgba(0,230,118,.07)'">Voir mon profil CRYPTIS ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" style="background:var(--surface);border-top:1px solid var(--border2);">
+  <div class="section-wrap">
+    <div class="reveal"><div class="sec-label">04 — projets</div></div>
+    <h2 class="sec-title reveal">Mes <span>Projets</span></h2>
+    <div class="projects-grid">
+
+      <a class="proj-card reveal" href="https://github.com/0xMOB-net/sportify-web-app" target="_blank">
+        <div class="proj-top"><span class="proj-repo">0xMOB-net / sportify-web-app</span><span class="proj-arrow">↗</span></div>
+        <div class="proj-body">
+          <div class="proj-num">// 01 · L2 · 2024-2025</div>
+          <div class="proj-title">Sportify</div>
+          <div class="proj-desc">Site web de réservation de séances de sport en ligne (yoga, fitness, cycling...). Système d'inscription et de connexion, catalogue d'activités, formulaire de devis avec envoi par mail. Projet du module Technologies du Web.</div>
+          <div class="proj-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Bootstrap</span><span class="tag c">Responsive</span></div>
+        </div>
+      </a>
+
+      <a class="proj-card reveal" href="https://github.com/0xMOB-net/genealogie-app" target="_blank">
+        <div class="proj-top"><span class="proj-repo">0xMOB-net / genealogie-app</span><span class="proj-arrow">↗</span></div>
+        <div class="proj-body">
+          <div class="proj-num">// 02 · L3 · 2025</div>
+          <div class="proj-title">Généalogie Familiale</div>
+          <div class="proj-desc">Application Python de gestion d'arbres généalogiques avec interface graphique Tkinter. Ajout, modification et visualisation de membres, recherche par nom. Les données sont stockées en base MySQL. Livré avec un exécutable (.exe) pour un lancement sans installation.</div>
+          <div class="proj-tags"><span class="tag">Python</span><span class="tag">Tkinter</span><span class="tag">MySQL</span><span class="tag c">mysql-connector</span></div>
+        </div>
+      </a>
+
+      <a class="proj-card reveal" href="https://github.com/0xMOB-net/galerie-image-app" target="_blank">
+        <div class="proj-top"><span class="proj-repo">0xMOB-net / galerie-image-app</span><span class="proj-arrow">↗</span></div>
+        <div class="proj-body">
+          <div class="proj-num">// 03 · L3 · 2025</div>
+          <div class="proj-title">Bibliothèque d'Images</div>
+          <div class="proj-desc">Application Java en architecture MVC avec interface JavaFX. Transformations d'images (rotation, symétrie), filtres (N&B, Sépia, Sobel), gestion de tags, et chiffrement/déchiffrement des images par mot de passe (SHA-256 + SecureRandom). Données persistées dans une base Derby.</div>
+          <div class="proj-tags"><span class="tag">Java 22</span><span class="tag">JavaFX</span><span class="tag c">Derby</span><span class="tag c">MVC</span><span class="tag c">SHA-256</span></div>
+        </div>
+      </a>
+
+      <a class="proj-card reveal" href="https://github.com/0xMOB-net/spaceInvader-app" target="_blank">
+        <div class="proj-top"><span class="proj-repo">0xMOB-net / spaceInvader-app</span><span class="proj-arrow">↗</span></div>
+        <div class="proj-body">
+          <div class="proj-num">// 04 · L2 · 2024</div>
+          <div class="proj-title">Space Invaders</div>
+          <div class="proj-desc">Réinterprétation de Space Invaders en Java avec Processing. Contrôle du vaisseau, tirs ennemis, menu interactif, sauvegarde et chargement de partie. Les niveaux sont lus depuis des fichiers .txt. Le score tient compte du temps pour finir chaque niveau.</div>
+          <div class="proj-tags"><span class="tag">Java</span><span class="tag">Processing</span><span class="tag c">POO</span><span class="tag c">Fichiers .txt</span></div>
+        </div>
+      </a>
+
+      <a class="proj-card reveal" href="https://github.com/0xMOB-net?tab=repositories" target="_blank" style="background:linear-gradient(135deg,var(--card),var(--card2));border-color:rgba(0,230,118,.18);">
+        <div class="proj-top" style="background:rgba(0,230,118,.05);border-color:rgba(0,230,118,.15);">
+          <span class="proj-repo" style="color:var(--green)">0xMOB-net · GitHub</span>
+          <span class="proj-arrow" style="color:var(--green)">↗</span>
+        </div>
+        <div class="proj-body" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem 1.3rem;gap:1rem;">
+          <svg viewBox="0 0 24 24" style="width:38px;height:38px;fill:var(--green);opacity:.85"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58 0-.28-.01-1.02-.01-2-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22 0 1.61-.01 2.9-.01 3.3 0 .32.22.7.83.58C20.56 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5z"/></svg>
+          <div>
+            <div class="proj-title" style="color:var(--green);margin-bottom:.5rem;">Voir tous mes projets</div>
+            <div class="proj-desc" style="margin-bottom:0;">Retrouvez tous mes dépôts sur mon profil GitHub.</div>
+          </div>
+          <div style="font-family:'Share Tech Mono';font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--green);border:1px solid rgba(0,230,118,.3);padding:.4rem 1rem;border-radius:4px;">github.com/0xMOB-net</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section id="formation">
+  <div class="section-wrap">
+    <div class="reveal"><div class="sec-label">05 — formation</div></div>
+    <h2 class="sec-title reveal">Parcours <span>Académique</span></h2>
+    <div class="tl">
+      <div class="tl-item reveal">
+        <div class="tl-date">2025 → 2026</div>
+        <div class="tl-role">Licence 3 Informatique <span style="color:var(--muted);font-size:.78rem;font-family:'Share Tech Mono'">(en cours)</span></div>
+        <div class="tl-org">🎓 Université de Limoges · Limoges, France</div>
+        <div class="tl-desc">Réseaux, sécurité informatique, bases de données, développement logiciel. Plusieurs projets réalisés en Java, Python, SQL et Web. Classé <strong>🥇 #1 au CTF d'initiation CRYPTIS</strong> avec 5535 points.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-date">2024 → 2025</div>
+        <div class="tl-role">Licence 2 Informatique</div>
+        <div class="tl-org">🎓 Université de Limoges · Limoges, France</div>
+        <div class="tl-desc">Algorithmique, programmation orientée objet en Java, systèmes d'exploitation, premiers cours de réseaux et bases de données.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-date">2023 → 2024</div>
+        <div class="tl-role">Licence 1 Informatique</div>
+        <div class="tl-org">🎓 Université de Limoges · Limoges, France</div>
+        <div class="tl-desc">Bases de l'informatique, algorithmique, programmation en C et Python, mathématiques discrètes.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-date">2022</div>
+        <div class="tl-role">Baccalauréat — Série Mathématiques</div>
+        <div class="tl-org">📚 Lycée BAH-KANE · Guinée</div>
+        <div class="tl-desc">Diplôme obtenu avec spécialisation mathématiques et sciences.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" style="background:var(--surface);border-top:1px solid var(--border2);">
+  <div class="section-wrap">
+    <div class="reveal"><div class="sec-label">06 — expérience</div></div>
+    <h2 class="sec-title reveal">Expériences <span>Professionnelles</span></h2>
+    <div class="tl">
+      <div class="tl-item reveal">
+        <div class="tl-date">Depuis 2024</div>
+        <div class="tl-role">Équipier Polyvalent</div>
+        <div class="tl-org">🌮 O'Tacos · Limoges</div>
+        <div class="tl-desc">Travail en équipe dans un environnement dynamique avec gestion des commandes, préparation des produits et service client. Cette expérience m’a permis de développer rigueur, organisation, gestion du stress et esprit d’équipe, tout en conciliant activité professionnelle et études universitaires.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-date">Depuis 2024</div>
+        <div class="tl-role">Trésorier</div>
+        <div class="tl-org">🤝 Association des Étudiants Guinéens de Limoges (AEGL)</div>
+        <div class="tl-desc">Je gère la trésorerie de l'association : suivi du budget, tenue des comptes, rapports financiers et organisation d'événements culturels. Ça m'a donné le sens de la rigueur et de la responsabilité.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-date">2023</div>
+        <div class="tl-role">Stage — Bureautique & Administration</div>
+        <div class="tl-org">🏢 UGANC · Guinée</div>
+        <div class="tl-desc">Mon premier stage en milieu professionnel. Utilisation quotidienne des outils bureautiques, gestion du standard téléphonique et rédaction de comptes rendus de réunions.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-wrap">
+    <div class="reveal"><div class="sec-label">07 — contact</div></div>
+    <h2 class="sec-title reveal">Me <span>Contacter</span></h2>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="c-sub">Je suis disponible pour un <strong style="color:var(--text)">stage du 31 mars au 23 mai 2026</strong>, une <strong style="color:var(--text)">alternance à partir de septembre 2026</strong>, ou pour intégrer un <strong style="color:var(--text)">Master en informatique avec une orientation cybersécurité, réseaux et systèmes</strong>. Mobile partout en France.</p>
+        <div class="c-info-list">
+          <div class="c-info-item"><div class="c-info-icon">✉️</div><div><div class="c-info-label">Email</div><div class="c-info-val"><a href="mailto:mamadou-oury.balde@etu.unilim.fr">mamadou-oury.balde@etu.unilim.fr</a></div></div></div>
+          <div class="c-info-item"><div class="c-info-icon">📞</div><div><div class="c-info-label">Téléphone</div><div class="c-info-val"><a href="tel:+33652360131">06 52 36 01 31</a></div></div></div>
+          <div class="c-info-item"><div class="c-info-icon">📍</div><div><div class="c-info-label">Localisation</div><div class="c-info-val">Limoges · Mobile toute la France</div></div></div>
+          <div class="c-info-item"><div class="c-info-icon">🚗</div><div><div class="c-info-label">Mobilité</div><div class="c-info-val" style="color:var(--green)">Permis B · Véhiculé</div></div></div>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/0xMOB-net" target="_blank" class="soc-btn">
+            <svg viewBox="0 0 24 24"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58 0-.28-.01-1.02-.01-2-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22 0 1.61-.01 2.9-.01 3.3 0 .32.22.7.83.58C20.56 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5z"/></svg>
+            GitHub · 0xMOB-net
+          </a>
+          <a href="https://www.linkedin.com/in/mamadou-oury-balde-300449336" target="_blank" class="soc-btn">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+        <div class="dl-list">
+          <div class="dl-item">
+            <div class="dl-icon">📄</div>
+            <div class="dl-info">
+              <div class="dl-title">Curriculum Vitae</div>
+              <div class="dl-sub">Format PDF · L3 Informatique 2026</div>
+            </div>
+            <a href="assets/docs/cv.pdf" download="CV_Mamadou_Oury_Balde.pdf" class="dl-btn dl-btn-solid">↓ CV</a>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="form-wrap">
+          <div class="form-header">
+            <div class="fh-dot" style="background:#ff5f57"></div>
+            <div class="fh-dot" style="background:#ffbd2e;margin-left:4px"></div>
+            <div class="fh-dot" style="background:#28c840;margin-left:4px"></div>
+            <div class="form-header-title">// envoyer_message.sh</div>
+          </div>
+          <div class="form-body">
+            <form id="cForm" novalidate>
+              <div class="fg fg-2">
+                <div><label class="fl" for="fn">Prénom & Nom *</label><input class="fi" id="fn" type="text" placeholder="Mamadou Oury Balde" required></div>
+                <div><label class="fl" for="fe">Email *</label><input class="fi" id="fe" type="email" placeholder="oury@exemple.fr" required></div>
+              </div>
+              <div class="fg"><label class="fl" for="fc">Entreprise</label><input class="fi" id="fc" type="text" placeholder="Optionnel"></div>
+              <div class="fg"><label class="fl" for="fs">Sujet *</label><input class="fi" id="fs" type="text" placeholder="Proposition de stage, alternance, master..." required></div>
+              <div class="fg"><label class="fl" for="fm">Message *</label><textarea class="ft" id="fm" placeholder="Votre message..." required></textarea></div>
+              <button type="submit" class="f-submit" id="fBtn">
+                <span id="fTxt">[ Envoyer → ]</span>
+                <div class="spin" id="fSpin"></div>
+              </button>
+              <div class="f-status" id="fStatus"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 <a href="#hero" style="color:var(--green)">Mamadou Oury Baldé</a></div>
+  <div style="color:var(--green);letter-spacing:.1em;font-size:.6rem;">[ CYBERSÉCURITÉ · RÉSEAUX · 🥇 #1 CTF CRYPTIS ]</div>
+  <div style="display:flex;gap:1.5rem;">
+    <a href="https://github.com/0xMOB-net" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/mamadou-oury-balde-300449336" target="_blank">LinkedIn</a>
+    <a href="mailto:mamadou-oury.balde@etu.unilim.fr">Email</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
